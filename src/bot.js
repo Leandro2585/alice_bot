@@ -5,7 +5,7 @@ const bot = new Telegraf(env.token);
 bot.start(context => {
   const { from } = context.update.message;
 
-  context.reply(`Seja bem vindo, ${from.first_name}`)
+  context.reply(`Seja bem vindo, ${from.first_name}`);
 });
 
 bot.on('text', (context) => {
